@@ -14,7 +14,7 @@ class BitMap
 		BitMap(size_t range)
 		{
 			this->range = range;
-		    this->_bits.resize(range/INT_BITS + 1);
+		    	this->_bits.resize(range/INT_BITS + 1);
 		}
 
 		void set(size_t x)
@@ -59,7 +59,7 @@ int main()
 		m.set(N);
 	}
 
-	for(int i=1; i<m.getRange(); i++){
+	for(int i = 1; i < m.getRange(); ++i){
 		if(m.test(i))
 		{
 			cout << i <<' ';
