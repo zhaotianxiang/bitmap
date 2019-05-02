@@ -9,7 +9,7 @@ class BitMap
 	private:
 		vector<int> _bits;
 		size_t range;
-
+	
 	public:
 		BitMap(size_t range)
 		{
@@ -26,7 +26,7 @@ class BitMap
 
 		void reset(size_t x)
 		{
-	        size_t index = x / INT_BITS;
+	        	size_t index = x / INT_BITS;
 			size_t temp = x % INT_BITS;
 			this->_bits[index] &= ~(1 << temp);
 		}
@@ -40,6 +40,7 @@ class BitMap
 			else
 				return false;
 		}
+	
 		size_t getRange()
 		{
 			return this->range;
@@ -49,7 +50,7 @@ class BitMap
 int main()
 {
 	size_t N;
-	BitMap m(100);
+	BitMap m(1000000);
 
 	while(cin >> N)
 	{
