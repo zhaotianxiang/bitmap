@@ -59,7 +59,8 @@ int main()
 		m.set(N);
 	}
 
-	for(int i = 1; i < m.getRange(); ++i){
+	for(int i = 1; i < m.getRange(); ++i)
+	{
 		if(m.test(i))
 		{
 			cout << i <<' ';
