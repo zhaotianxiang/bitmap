@@ -48,9 +48,24 @@ bool test(int n)
 
 # 位图的应用，每一次用到都会更新到这里
 
-## 1. 正整数排序
+## 1. Linux中分配唯一PID的算法，速度奇快无比。
 
-## 2. Github题目，编写代码，移除未排序链表中的重复节点。保留最开始出现的节点。
+## 2. 有限的正整数排序问题
+
+```c++
+// 1. initialize set to empty
+for i=[0,n)
+    bit[i] = 0;
+// 2. insert presents elements into the set
+for each i in input 
+    bit[i] = 1;
+// 3. write sorted file to output
+for i =[0,n)
+    if(bit[i] == 1)
+        output i
+```
+
+## 3. Github题目，编写代码，移除未排序链表中的重复节点。保留最开始出现的节点。
 
 示例1:
 
