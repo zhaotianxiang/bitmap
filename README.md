@@ -4,7 +4,7 @@
 
    为了应对日常的大规模数据处理需求， 应用于正整数的去重和排序问题
    
-   两个目的： **正整数排序** or **正整数（ID） 去重**
+   两个目的： **有限正整数排序** or **有限正整数（ID，`单链表去重`）去重**
    
    
 #### 2.算法优点
@@ -38,5 +38,10 @@ void reset(int n)
     int index = n / INT_LENGTH;
     int cur = n % INT_LENGTH;
     this._bits[index] &= ~(1 << cur);
+}
+
+bool test(int n)
+{
+    return this._bits[n / INT_LENGTH] & (1 << n % INT_LENGTH );
 }
 ```
