@@ -29,7 +29,7 @@ void set(int n)
 {
     int index = n / INT_LENGTH;
     int cur = n % INT_LENGTH;
-    this._bits[index] |= (1 << n);
+    this._bits[index] |= (1 << cur);
 }
 
 /*置第 n 位为 0 */
@@ -37,6 +37,6 @@ void reset(int n)
 {
     int index = n / INT_LENGTH;
     int cur = n % INT_LENGTH;
-    this._bits[index] &= ~(1 << n);
+    this._bits[index] &= ~(1 << cur);
 }
 ```
